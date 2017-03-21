@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/madras_race_style.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <script src="js/jquery.bxslider.js"></script>
+  <script>
+       
+        $(document).ready(function () {
+            $('.slide_bxslider_new').bxSlider({
+                nextText: '<img src="img/right_arrow small.png"/>',
+                prevText: '<img src="img/left_arrow small.png"/>',
+                auto: true,
+                autoControls: true,
+                pager: false
+            });
+        });
+
+    </script>
+	<script>
+    $(document).ready(function(){
+
+	var str=location.href.toLowerCase();
+
+	$(".navigation li a").each(function() {
+
+	if (str.indexOf(this.href.toLowerCase()) > -1) 	{
+
+	$("li.active").removeClass("active");
+
+	$(this).parent().addClass("active");
+
+	}
+
+	});
+
+	$("li.active"').parents().each(function(){
+
+	if ($(this).is("li")){
+
+	$(this).addClass("active");
+
+	}
+
+	});
+
+	});
+
+
+
+    </script>
+	<style type="text/css">
+
+	
+
+
+	ul.navigation li.active{ background:#000;}
+
+	ul.navigation li.active a{ color:#f5f5f5; cursor:default;}
+
+	</style>
+</head>
+<body>
+
+  
+<div class="container">
+  
+		<!--Slide Section start-->
+        <div class="row">
+            <div class="col-md-12 slider_madras_race_club">
+                <div class="slider_section_new_margin">
+                    <ul class="slide_bxslider_new">
+                        <li class="bx_slide_fisrt">
+                            <div class="row">
+                                <div class="col-md-12" align="center">
+                                    <div class="madras_welcome_text">
+                                        <h1>Welcome to the Madras Race club</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bx_slide_fisrt">
+                            <div class="row">
+                                <div class="col-md-12" align="center">
+                                    <div class="madras_welcome_text">
+                                        <h1>Welcome to the Madras Race club</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bx_slide_fisrt">
+                            <div class="row">
+                                <div class="col-md-12" align="center">
+                                    <div class="madras_welcome_text">
+                                        <h1>Welcome to the Madras Race club</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bx_slide_fisrt">
+                            <div class="row">
+                                <div class="col-md-12" align="center">
+                                    <div class="madras_welcome_text">
+                                        <h1>Welcome to the Madras Race club</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		 <!--Slide Section End-->
+		 <!--Navbar Section start-->
+		<div class="row navigation_menu" >
+			<div class="col-md-3">
+				<div class="right_logo">
+					<img src="img/logo_mrc_lodge.png" width="290"/>
+				</div>
+			</div>
+			<div class="col-md-9" align="center">
+				<div class="navbar_section">
+					<nav class="navbar navbar-inverse">
+								<div class="container-fluid">
+
+									<div class="navbar-header">
+										<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+
+									</div>
+
+									<div class="container-fluid">
+										<ul class="navigation nav navbar-nav" align="center">
+											<li class="active"><a href="#">Home</a></li>
+											<li class="dropdown">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+													About Us
+													<span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+													<li><a href="#">Member of the Committee of Management</a></li>
+													<li><a href="#">Board of Appeal</a></li>
+													<li><a href="#">Stewards</a></li>
+													<li><a href="#">Officials</a></li>
+												</ul>
+											</li>
+											<li class="dropdown">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+													Racing
+													<span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu">
+                                                        <li><a href="prospects.html">Prospectus</a></li>
+                                                        <li><a href="entries.html">Entries</a></li>
+                                                        <li><a href="Handicaps.html">Handicaps</a></li>
+                                                        <li><a href="Acceptance.html">Acceptance</a></li>
+                                                        <li><a href="declaration.html">Declaration</a></li>
+                                                        <li><a href="racecard.html">Race Card</a></li>
+                                                        <li><a href="results.html">Results</a></li>
+                                                        <li><a href="revised.html">Revised Rating</a></li>
+                                                        <li><a href="trainer_lot.html">Trainers Lot</a></li>
+                                                        <li><a href="mrc_rating_schedule.html">MRC Racing Schedule</a></li>
+                                                    </ul>
+											</li>
+											<li><a href="#">Better Rules</a></li>
+											<li><a href="#">Gallery</a></li>
+											<li><a href="#">News & Events</a></li>
+											<li><a href="#">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+			</div>
+		
+		</div>
+		
+		</div>
+		<!--Navbar Section End-->
+</div>
+</body>
+</html>
+

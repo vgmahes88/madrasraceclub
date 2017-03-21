@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Madras Race Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/madras_race_style.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous" />
+  <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <script src="js/jquery.bxslider.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script>
+	$(document).ready(function()
+	{
+		$(window).resize(function() {
+			$('#dashboard_content').height($(window).height());
+		});
+
+		$(window).trigger('resize');
+	});
+  </script>
+	<style>
+		.contact_details table
+		{
+			width:100%;
+			
+		}
+		.dashboard_content
+		{
+			background-image:url("img/background.png");
+			background-size:100% 100%;
+			height:100%;
+		}
+		.contact_details
+		{
+			background:#fff;
+			
+			height: 230px;
+			padding: 18px;
+		}
+		.right p
+		{
+			text-align:left !important;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body >
+<div class="container mrc_main_container dashboard_content" >
+	<div class="row">
+    <div class="col-md-12 mrc_nav_column"></div>
+      <div class="mrc_race_header">
+		<nav role="navigation" class="navbar navbar-default">
+            <div class="container">
+                 <!-- Brand and toggle get grouped for better mobile display -->
+                                        <div class="navbar-header">
+                                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+
+                                        </div>
+                                        <!-- Collection of nav links and other content for toggling -->
+                                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                                            <ul class="nav navbar-nav" align="left">
+                                                <!--<li class="active"><a href="#">Home</a></li> -->
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                        About Us
+                                                        <span class="caret"></span>
+                                                    </a>
+                                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                                        <li><a href="committee_management.html">Member of the Committee of Management</a></li>
+                                                        <li><a href="board_of_appeal.html">Board of Appeal</a></li>
+                                                        <li><a href="Steward.html">Stewards</a></li>
+                                                        <li><a href="Officials.html">Officials</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                        Racing
+                                                        <span class="caret"></span>
+                                                    </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="prospects.html">Prospectus</a></li>
+                                                        <li><a href="entries.html">Entries</a></li>
+                                                        <li><a href="Handicaps.html">Handicaps</a></li>
+                                                        <li><a href="Acceptance.html">Acceptance</a></li>
+                                                        <li><a href="declaration.html">Declaration</a></li>
+                                                        <li><a href="racecard.html">Race Card</a></li>
+                                                        <li><a href="results.html">Results</a></li>
+                                                        <li><a href="revised.html">Revised Rating</a></li>
+                                                        <li><a href="trainer_lot.html">Trainers Lot</a></li>
+                                                        <li><a href="mrc_rating_schedule.html">MRC Racing Schedule</a></li>
+                                                    </ul>
+                                                </li>
+												<li><a href="#">Fixtures</a></li> </ul>
+												<ul class="nav navbar-nav navbar-right">
+												  <li><a href="gallery.html">Gallery</a></li>
+													<li><a href="#">News & Events</a></li>
+												  
+													<li><a href="contact-us.html">Contact Us</a></li>
+												</ul>
+												
+                                                
+                                           
+                                        </div>
+                                    </div>
+                                </nav>                                               
+	  
+	  </div>
+    </div>
+	<div class="row">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12" style="padding-left:0px;padding-right:0px;">
+				<div  style="overflow:hidden;width:100%;height:500px;resize:none;max-width:100%;">
+					<div id="embedded-map-canvas" style="height:100%; width:100%;max-width:100%;" id="dashboard_content">
+					<iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Guindy+Race+Course+Stables,+Five+Furlong+Rd,+Guindy,+Chennai,+Tamil+Nadu+600032,+India&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe></div><a class="embed-map-code" rel="nofollow" href="https://www.interserver-coupons.com" id="authorize-map-data">InterserverCoupons</a><style>#embedded-map-canvas .map-generator{max-width: 100%; max-height: 100%; background: none;</style>
+					</div>
+					<script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=d1b5b72d-cb17-d325-5d07-95d3a43d3274&c=embed-map-code&u=1474286373" defer="defer" async="async"></script>	
+			</div></div>
+			
+		
+		
+		
+	
+	<div class="row">
+		<div class="contact_details" align="center">
+		  <div class="col-md-6">
+				<div class="left">
+					<h3>GUINDY LODGE</h3>
+					<p>POST BOX NO : 2639,</p>
+					<p>GUINDY,</p>
+					<p>CHENNAI – 600 032.</p>
+				</div>
+					
+				</div>
+				 <div class="col-md-6">
+					<div class="right">
+						<p>TELEPHONE 	:044 – 22301611,044 – 22301612</p>
+						<p>GL FAX 	: 	044 – 2220 1202</p>
+						<p>PARCEL ORDER ENQUIRY 	: 	044 – 2220 1506</p>
+						<p>E-MAIL (Guindy Lodge) 	: 	mrcguindylodge@gmail.com</p>
+						<p>E-MAIL (Room Booking) 	: 	mrcroomcomplex@gmail.com</p>
+						<p>E-MAIL (Party Booking) 	: 	mrcbanquetbooking@gmail.com</p>
+						<p>WEBSITE 	: 	www.madrasraceclub.com</p>
+					</div>
+					
+					
+				 
+				 </div>
+			</div>
+	
+	</div>
+	<div class="row footer_bak">
+		<div class="col-md-12">
+		<div class="footer">
+			<h3>2016.All Rights Reserved,MADRAS RACE CLUB</h3>
+		</div>
+			</div>
+			</div>																																				
+	
+	</div>
+	
+</div>
+
+</body>
+</html>
+
